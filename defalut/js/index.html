@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <script src="./js/common.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW({ offset: 200 }).init();
+    </script>
+</head>
+<body id="app">
+    <header ref="header">
+        <div class="inner">
+            <h1>
+                <div class="logo">hide</div>
+            </h1>
+            <div class="navigation is_pc">
+                <ul>
+                    <li>
+                        <a href="#about">わたしたちについて</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="#business">事業内容</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="#company">会社概要</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="#access">アクセス</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="navigation is_tab">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu" ref="menuSp">
+                        <li>
+                            <a href="#about">わたしたちについて</a>
+                        </li>
+                        <li></li>
+                        <li>
+                            <a href="#business">事業内容</a>
+                        </li>
+                        <li></li>
+                        <li>
+                            <a href="#company">会社概要</a>
+                        </li>
+                        <li></li>
+                        <li>
+                            <a href="#access">アクセス</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="main_visual" ref="main_visual">
+            <div class="wrap">
+                <div class="inner">
+                    <h2 class="wow fadeIn" data-wow-duration="3s">
+                        プラスチック<br class="is_sp">樹脂成形 <br class="is_pc">
+                        の<br class="is_sp">エキスパート
+                    </h2>
+                    <p class="wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">長年培われたプラスチック製造加工技術と品質</p>
+                </div>
+            </div>
+        </section>
+        <section class="about wow fadeInUp" id="about">
+            <div class="wrap">
+                <div class="inner">
+                    <h3>ABOUT</h3>
+                    <h4>プラスチック樹脂成形で、<br class="is_tab">お客様の想いを最高の形に。</h4>
+                    <p>
+                        「エスエフティーアールのプラスチック樹脂は、<br class="is_tab">なくてはならない製品である」と<br class="is_sp">感じていただけるよう、<br>
+                        継続的な技術力向上と熱意で、<br class="is_sp">皆様のご期待にお答えしてまいります。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const { createApp } = Vue
+        
+        createApp({
+            data(){
+                return {
+                    // message: 'Hello Vue!'
+                }
+            },
+            mounted(){
+                let menuSp = this.$refs.menuSp.querySelectorAll("li:nth-child(odd)")
+                menuSp.forEach(element => {
+                    element.onclick = ()=> this.checkOff(element)
+                })
+            },
+            created(){
+                window.onscroll = this.handleScroll
+            },
+            methods:{
+                handleScroll(){
+                    // header pc 背景
+                    let main_visual = this.$refs.main_visual,
+                        header = this.$refs.header
+                    window.scrollY >= main_visual.scrollHeight
+                    ? header.style.background = "rgba(0,0,0,0.5)"
+                    : header.style.background = "transparent"
+                },
+                checkOff(x){
+                    let checkbox = x.closest("#menuToggle").querySelector("input[type=checkbox]")
+                    checkbox.checked = false
+                }
+            }
+        }).mount('#app')
+    </script>
+
+</body>
+</html>

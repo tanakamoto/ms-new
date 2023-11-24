@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS Document */
+
+$white: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap');
+
+$breakpoints: (
+'sp': (max-width: 480px),
+'tab': (max-width: 780px),
+'note': (max-width: 1024px),
+'pc': (min-width: 1025px)
+) !default;
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+@mixin wrap{
+    max-width: calc(1000px + 2rem);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp{
+    display: none;
+}
+@include media(sp){
+    .is_sp{
+        display: block;
+    }
+}
+@include media(tab){
+    .is_tab{
+        display: block;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .is_onlytab{
+        display: block;
+    }
+}
+@include media(pc){
+    .is_pc{
+        display: block;
+    }
+}
+@mixin serif{
+    font-family: 'Noto Serif JP', serif;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+
+
+    @include media(sp){
+        font-size: 14px;
+    }
+    body{
+        width: 900px;
+        margin: auto;
+        font-family: 'Noto Sans JP', sans-serif;
+        line-height: 1.7;
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+ul{
+    list-style: url(../image/PDF.svg) inside;
+    li{
+        padding-top: 25px;
+    }
+}
+
+label{
+    font-size: 21px;
+}
+
+// *{
+//     border: red 1px solid;
+// }
+
+.eighteenth{
+    .wrap{
+        margin-top: 110px;
+        h2{
+            font-size: 33px;
+            margin: 0;
+        }
+        .underbar{
+            display: inline-block;
+            width: 50px;
+            height: 5px;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid black;
+        }
+        .inner{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                gap: 50px 110px;
+                li{
+                    padding-top: 0px;
+                    font-size: 14px;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+.fourteen-seventeeth{
+    .wrap{
+        margin-top: 110px;
+        .inner{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            #accordion{
+                .accordion_content{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.ten-thirteenth{
+    .wrap{
+        margin-top: 0px;
+        .inner{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            #accordion{
+                .accordion_content{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+.button{
+    margin: auto;
+    a{
+        display: inline-block;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        margin: 100px auto;
+        border: 1px black solid;
+        border-radius: 30px;
+    }
+}
+
+#accordion{
+    width:100%;
+    max-width:300px;
+    // background:#e9e9e9;
+    padding:10px;
+}
+/*項目名*/
+label.menu_title{
+    display:block;
+    width:100%;
+    // background:#dd4000;
+    // color:#fff;
+    font-weight:bold;
+    border-radius:5px;
+    text-align: center;
+    margin:5px 0;
+    padding:10px;
+}
+/*項目名の矢印アイコン*/
+#accordion label::after{
+    content:"\f103";
+    font-family:"Font awesome 5 free";
+    font-weight:bold;
+    margin-left:5px;
+}
+/*項目名にカーソルをのせた時*/
+label.menu_title:hover{
+    cursor: pointer;
+    // background:#d40000;
+    transition:ease-in .5s;
+}
+/*チェックボックスを非表示*/
+#accordion input[type="checkbox"]{
+    display:none;
+}
+/*開閉するコンテンツ*/
+.accordion_content{
+    height:0;
+    background:#f9f9f9;
+    opacity:0;
+    transform:translateY(-50%) scaleY(0);
+}
+/*開いている時の項目名*/
+#accordion input[type="checkbox"]:checked, #accordion2 input[type="checkbox"]:checked + label.menu_title{
+    // background:#d40000;
+    margin-bottom:0;
+}
+/*開いている時の矢印アイコン*/
+#accordion input[type="checkbox"]:checked + label.menu_title::after{
+    content:"\f102";
+    font-family:"Font awesome 5 free";
+    font-weight:bold;
+}
+/*コンテンツを開く*/
+#accordion input[type="checkbox"]:checked + label.menu_title + .accordion_content{
+    height:auto;
+    opacity:1;
+    transform:translateY(0) scaleY(1);
+    transition:ease .5s;
+}
+
+.manu-title{
+    display: flex;
+    justify-content: left;
+
+}

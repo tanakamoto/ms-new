@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap");
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .is_sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 780px) {
+  .is_tab {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .is_onlytab {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .is_pc {
+    display: block;
+  }
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+html body {
+  width: 900px;
+  margin: auto;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+html body a {
+  text-decoration: none;
+  color: #000000;
+}
+html body img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: url(../image/PDF.svg) inside;
+}
+ul li {
+  padding-top: 25px;
+}
+
+label {
+  font-size: 21px;
+}
+
+.eighteenth .wrap {
+  margin-top: 110px;
+}
+.eighteenth .wrap h2 {
+  font-size: 33px;
+  margin: 0;
+}
+.eighteenth .wrap .underbar {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.eighteenth .wrap .inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 50px 110px;
+}
+.eighteenth .wrap .inner ul li {
+  padding-top: 0px;
+  font-size: 14px;
+}
+
+.fourteen-seventeeth .wrap {
+  margin-top: 110px;
+}
+.fourteen-seventeeth .wrap .inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.fourteen-seventeeth .wrap .inner #accordion .accordion_content {
+  display: block;
+}
+
+.ten-thirteenth .wrap {
+  margin-top: 0px;
+}
+.ten-thirteenth .wrap .inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.ten-thirteenth .wrap .inner #accordion .accordion_content {
+  display: block;
+}
+
+.button {
+  margin: auto;
+}
+.button a {
+  display: inline-block;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  border: 1px black solid;
+  border-radius: 30px;
+}
+
+#accordion {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+}
+
+/*項目名*/
+label.menu_title {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+/*項目名の矢印アイコン*/
+#accordion label::after {
+  content: "\f103";
+  font-family: "Font awesome 5 free";
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/*項目名にカーソルをのせた時*/
+label.menu_title:hover {
+  cursor: pointer;
+  transition: ease-in 0.5s;
+}
+
+/*チェックボックスを非表示*/
+#accordion input[type=checkbox] {
+  display: none;
+}
+
+/*開閉するコンテンツ*/
+.accordion_content {
+  height: 0;
+  background: #f9f9f9;
+  opacity: 0;
+  transform: translateY(-50%) scaleY(0);
+}
+
+/*開いている時の項目名*/
+#accordion input[type=checkbox]:checked, #accordion2 input[type=checkbox]:checked + label.menu_title {
+  margin-bottom: 0;
+}
+
+/*開いている時の矢印アイコン*/
+#accordion input[type=checkbox]:checked + label.menu_title::after {
+  content: "\f102";
+  font-family: "Font awesome 5 free";
+  font-weight: bold;
+}
+
+/*コンテンツを開く*/
+#accordion input[type=checkbox]:checked + label.menu_title + .accordion_content {
+  height: auto;
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+  transition: ease 0.5s;
+}
+
+.manu-title {
+  display: flex;
+  justify-content: left;
+}/*# sourceMappingURL=clubyuji.css.map */
