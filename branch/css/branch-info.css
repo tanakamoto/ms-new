@@ -1,0 +1,146 @@
+img {
+  max-width: 100%;
+}
+
+.mv {
+  margin-top: 40px;
+}
+.mv .page-title {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+.mv .page-title h2 {
+  border-left: 1px solid black;
+  padding-left: 35px;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 img {
+    margin-bottom: 10px;
+    max-width: 118px;
+  }
+}
+.mv .page-title h2 span {
+  font-size: 14px;
+  padding-left: 35px;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 span {
+    padding-left: 0;
+  }
+}
+.mv .page-title h2 br {
+  display: none;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 br {
+    display: block;
+  }
+}
+.mv .bread {
+  max-width: calc(1000px + 1rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.contents {
+  margin-top: 100px;
+}
+@media screen and (max-width: 660px) {
+  .contents {
+    margin-top: 50px;
+  }
+}
+.contents .wrap {
+  max-width: calc(1000px + 2rem);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.contents .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .contents .inner {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+.contents .inner .branchs {
+  width: 300px;
+  border-top: 1px solid black;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 660px) {
+  .contents .inner .branchs {
+    margin: 0 auto 70px;
+  }
+}
+.contents .inner .branchs dl {
+  margin: 10px 0;
+}
+.contents .inner .branchs dl dd {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+.contents .inner .branchs dl .headquarters-dd {
+  margin-top: 5px;
+}
+.contents .inner .branchs ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.contents .inner .branchs ul li {
+  width: 145px;
+  height: 42px;
+}
+.contents .inner .branchs ul li a {
+  display: block;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 42px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt" 1;
+  transition: all 0.3s;
+}
+.contents .inner .branchs ul li a:hover {
+  background-color: #bfbfbf;
+}
+.contents .inner .branchs .arrow {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+@media screen and (max-width: 660px) {
+  .contents .inner .branchs .arrow {
+    display: block;
+  }
+}
+.contents .inner .branchs .arrow.open {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=branch-info.css.map */
