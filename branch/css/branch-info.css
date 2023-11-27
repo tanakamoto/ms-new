@@ -2,6 +2,10 @@ img {
   max-width: 100%;
 }
 
+.branch {
+  overflow: unset;
+}
+
 .mv {
   margin-top: 40px;
 }
@@ -143,4 +147,8 @@ img {
 }
 .contents .inner .branchs .arrow.open {
   transform: rotate(180deg);
+}
+
+.due .links ul {
+  display: flex;
 }/*# sourceMappingURL=branch-info.css.map */

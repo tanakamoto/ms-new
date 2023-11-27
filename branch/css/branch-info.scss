@@ -1,6 +1,9 @@
 img{
     max-width: 100%;
 }
+.branch{
+    overflow: unset;
+}
 .mv{
     margin-top: 40px;
     .page-title{
@@ -127,4 +130,11 @@ img{
         }
     }
 
+}
+.due{
+    .links{
+        ul{
+            display: flex;
+        }
+    }
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/branch-info.css">
 </head>
 <body>
-    <main>
+    <main class="branch">
         <section class="mv">
             <div class="page-title">
                 <h2><img src="./img/branch-info/branch.svg" alt="branch"><br><span>支部情報</span></h2>
@@ -22,7 +22,7 @@
                 TOP <span>＞</span> 支部情報
             </div>
         </section>
-        <section class="contents">
+        <section class="branch__contents">
             <div class="wrap">
                 <div class="inner">
                     <div class="branchs">
@@ -207,8 +207,7 @@
                 </div>
             </div>
         </section>
-    </main>
-    <script>
+    </main>    <script>
         $(function(){
             if(window.matchMedia("(max-width: 768px)").matches){
                 $('.branchs ul').hide();
