@@ -147,4 +147,8 @@ img {
 }
 .contents .inner .branchs .arrow.open {
   transform: rotate(180deg);
+}
+
+.due .links ul {
+  display: flex;
 }/*# sourceMappingURL=branch-info.css.map */
