@@ -1,1 +1,52 @@
-/*# sourceMappingURL=privacy.css.map */
+* {
+  border: 1px solid red;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body .privacy-1 {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid;
+  border-color: BFBFBF;
+}
+body .privacy-1 p {
+  margin: 104px 0 37px;
+  display: flex;
+  align-items: end;
+  width: 30px;
+}
+body .privacy-1 h1 {
+  margin: 104px 31px 37px 37px;
+}
+body .privacy-1 h1 div {
+  width: 300px;
+  height: 30px;
+}
+body .privacy-1 h1 div img {
+  width: 291px;
+}
+body .privacy-1 .privacypolicy {
+  width: 300px;
+}
+body .privasy-2 {
+  font-size: 14px;
+}
+body .privasy-2 p {
+  margin: 20px 0 40px 198px;
+}
+body h2 {
+  margin: 68px 0 40px;
+  font-size: 20px;
+}
+body .saishuu h2 {
+  margin: 47px 0 40px;
+  font-size: 20px;
+}
+body .mokuteki {
+  max-width: 980px;
+  font-size: 14px;
+  text-indent: 10px;
+}/*# sourceMappingURL=privacy.css.map */
