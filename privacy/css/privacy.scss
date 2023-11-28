@@ -1,65 +1,96 @@
-*{
-    border: 1px solid red;
+// *{
+//     border: 1px solid red;
+
+// }
+body{
+    margin: 0;
+}
+.privacy {
+    // max-width: 1000px;
+    // margin: 0 auto;
+    font-size: 14px;
+    // span {
+    //     font-size: 10px;
+    // }
 }
 
-body{
-    max-width: 1000px;
-    margin: 0 auto;
-   
-.privacy-1{
-    display: flex;
-    flex-wrap: wrap;
-    p{
-    margin: 104px 0 37px ; 
-    display: flex;
-    align-items:end;
-    width: 30px;
-    }
+.privacy-1 {
+    border-bottom:1px solid #BFBFBF;
+    padding-bottom: 38px;
+    padding-top: 65px;
+    .inner{
+        display: flex;
+        justify-content: flex-start;
+        border-left: 1px solid black;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-left: 35px;
+        gap: 30px;
+        align-items: flex-end;
+        padding-top: 5px;
+        .privacypolicy {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
 
-    h1{
-    margin: 104px 31px 37px 37px;
-    div{
-        width: 300px;
-        height: 30px;
-        img{
+        }
+        div {
             width: 291px;
+            img {
+                width: 100%;
+            }
+        }
+    
+    }
+}
+
+.privacy-2 {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .text{
+        font-size: 14px;
+
+    }
+    div{
+        margin-top: 70px;
+        h3 {
+            font-size: 20px;
+            border-bottom:1px solid #BFBFBF;
+            margin: 0;
+            padding-bottom: 17px;
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+        }  
+        ol{
+            margin: 20px 0;
+            li{
+                margin-bottom: 15px;
+            }
+        }  
+    }
+   
+    .saishuu {
+        h2 {
+            margin: 47px 0 40px;
+            font-size: 20px;
         }
     }
-
+    .sanjyou {
+        max-width: 980px;
     }
-    .privacypolicy{
-        width: 300px;
+    .yonjyou {
+        max-width: 980px;
     }
-    border-bottom: solid ;
-    border-color: BFBFBF;
-}
-
- .privasy-2{
-     p{
-    margin: 20px 0 40px 198px;
+    .gojyou {
+        max-width: 940px;
     }
-    font-size: 14px;
-}
- h2{
-    margin: 68px 0 40px; 
-    font-size: 20px;
-}
- .saishuu{
-     h2{
-    margin: 47px 0 40px; 
-    font-size: 20px;   
-    }
-
-}
- .mokuteki{
-    max-width: 980px;
-    font-size: 14px;
-    text-indent: 10px;
-}
-
-
-
-
-
+    
+    
 
 }

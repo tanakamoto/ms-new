@@ -1,52 +1,79 @@
-* {
-  border: 1px solid red;
+body {
+  margin: 0;
 }
 
-body {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-body .privacy-1 {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: solid;
-  border-color: BFBFBF;
-}
-body .privacy-1 p {
-  margin: 104px 0 37px;
-  display: flex;
-  align-items: end;
-  width: 30px;
-}
-body .privacy-1 h1 {
-  margin: 104px 31px 37px 37px;
-}
-body .privacy-1 h1 div {
-  width: 300px;
-  height: 30px;
-}
-body .privacy-1 h1 div img {
-  width: 291px;
-}
-body .privacy-1 .privacypolicy {
-  width: 300px;
-}
-body .privasy-2 {
+.privacy {
   font-size: 14px;
 }
-body .privasy-2 p {
-  margin: 20px 0 40px 198px;
+
+.privacy-1 {
+  border-bottom: 1px solid #BFBFBF;
+  padding-bottom: 38px;
+  padding-top: 65px;
 }
-body h2 {
-  margin: 68px 0 40px;
+.privacy-1 .inner {
+  display: flex;
+  justify-content: flex-start;
+  border-left: 1px solid black;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 35px;
+  gap: 30px;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+.privacy-1 .inner .privacypolicy {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.privacy-1 .inner div {
+  width: 291px;
+}
+.privacy-1 .inner div img {
+  width: 100%;
+}
+
+.privacy-2 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.privacy-2 .text {
+  font-size: 14px;
+}
+.privacy-2 div {
+  margin-top: 70px;
+}
+.privacy-2 div h3 {
   font-size: 20px;
+  border-bottom: 1px solid #BFBFBF;
+  margin: 0;
+  padding-bottom: 17px;
+  margin-bottom: 30px;
 }
-body .saishuu h2 {
+.privacy-2 div p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+}
+.privacy-2 div ol {
+  margin: 20px 0;
+}
+.privacy-2 div ol li {
+  margin-bottom: 15px;
+}
+.privacy-2 .saishuu h2 {
   margin: 47px 0 40px;
   font-size: 20px;
 }
-body .mokuteki {
+.privacy-2 .sanjyou {
   max-width: 980px;
-  font-size: 14px;
-  text-indent: 10px;
+}
+.privacy-2 .yonjyou {
+  max-width: 980px;
+}
+.privacy-2 .gojyou {
+  max-width: 940px;
 }/*# sourceMappingURL=privacy.css.map */
