@@ -1,0 +1,352 @@
+@charset "UTF-8";
+img {
+  max-width: 100%;
+}
+
+.mv {
+  margin-top: 40px;
+}
+.mv .page-title {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+.mv .page-title h2 {
+  border-left: 1px solid black;
+  padding-left: 35px;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 {
+    padding: 4px 0 4px 15px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 img {
+    margin-bottom: 10px;
+    max-width: 268px;
+  }
+}
+.mv .page-title h2 span {
+  font-size: 14px;
+  padding-left: 35px;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 span {
+    padding-left: 0;
+  }
+}
+.mv .page-title h2 br {
+  display: none;
+}
+@media screen and (max-width: 660px) {
+  .mv .page-title h2 br {
+    display: block;
+  }
+}
+.mv .bread {
+  background-color: #f1f1f1;
+  padding-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .mv .bread {
+    display: none;
+  }
+}
+.mv .bread ul {
+  max-width: calc(1000px + 1rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 12px;
+}
+
+.worries {
+  padding-top: 50px;
+  background-color: #f1f1f1;
+  padding-bottom: 120px;
+}
+.worries .inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.worries .inner p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .worries .inner p {
+    font-size: clamp(14px, 3.5vw, 19px);
+  }
+}
+.worries .inner .box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 35px 35px;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .worries .inner .box {
+    padding: 35px 30px 30px 30px;
+  }
+}
+.worries .inner .box h3 {
+  color: #b4272d;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .worries .inner .box h3 {
+    font-size: 20px;
+  }
+}
+.worries .inner .box .ul-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media screen and (max-width: 930px) {
+  .worries .inner .box .ul-wrap {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 440px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .worries .inner .box .ul-wrap {
+    gap: 15px;
+    max-width: 300px;
+  }
+}
+.worries .inner .box .ul-wrap ul {
+  list-style: url(../img/check.svg) inside;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 600px) {
+  .worries .inner .box .ul-wrap ul {
+    gap: 15px;
+    list-style-image: url(../img/check-sp.svg);
+  }
+}
+.worries .inner .box .ul-wrap ul li {
+  font-size: 22px;
+}
+@media screen and (max-width: 600px) {
+  .worries .inner .box .ul-wrap ul li {
+    font-size: clamp(13.5px, 3.5vw, 15px);
+  }
+}
+
+.philosophy {
+  padding-top: 265px;
+  position: relative;
+  padding-bottom: 100px;
+}
+.philosophy .obi {
+  position: absolute;
+  top: -22%;
+}
+.philosophy h2 {
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.philosophy h2::after {
+  content: "";
+  background-image: url("../img/red-line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 700px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.philosophy .description {
+  margin-top: 45px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 36px;
+}
+.philosophy .description span {
+  color: #b4272d;
+  font-weight: bold;
+}
+
+.about__cnt1 {
+  background-color: #f1f1f1;
+  padding: 125px 0;
+  background-image: url("../img/bg-logo.png");
+  background-size: 55%;
+  background-position: -20%;
+  background-repeat: no-repeat;
+}
+.about__cnt1 .inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.about__cnt1 .inner h3 {
+  color: #b4272d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.about__cnt1 .inner .cnt-flex {
+  display: flex;
+  gap: 30px;
+}
+.about__cnt1 .inner .cnt-flex figure {
+  max-width: 122px;
+}
+.about__cnt1 .inner .cnt-flex .text p {
+  font-size: 15px;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  line-height: 26px;
+}
+.about__cnt1 .inner .cnt-flex .text .name {
+  max-width: 445px;
+  margin: 30px 0 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  text-align: center;
+}
+.about__cnt2 {
+  padding: 70px 0 87px;
+  background-image: url("../img/bg-logo2.png");
+  background-size: 55%;
+  background-position: 120%;
+  background-repeat: no-repeat;
+}
+.about__cnt2 .inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.about__cnt2 .inner h3 {
+  color: #b4272d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.about__cnt2 .inner .cnt-flex {
+  display: flex;
+  gap: 35px;
+}
+.about__cnt2 .inner .cnt-flex figure {
+  max-width: 224px;
+}
+.about__cnt2 .inner .cnt-flex .text {
+  max-width: 731px;
+}
+.about__cnt2 .inner .cnt-flex .text p {
+  font-size: 15px;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  line-height: 21px;
+}
+.about__cnt2 .inner .ending {
+  margin-top: 20px;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  font-size: 15px;
+}
+.about__cnt2 .inner .name {
+  max-width: 502px;
+  margin: 30px 0 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  text-align: center;
+}
+
+.voice {
+  background-color: #f1f1f1;
+  padding-top: 70px;
+}
+.voice .inner {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.voice h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.voice .voice-flex {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.voice .voice-flex .item {
+  width: 470px;
+  background-color: white;
+  padding: 30px;
+}
+.voice .voice-flex .item .thoughts {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 18px;
+  position: relative;
+  font-feature-settings: "palt" 1;
+  line-height: 32px;
+}
+.voice .voice-flex .item .thoughts::after {
+  content: "";
+  background-image: url("../img/voice-line.svg");
+  width: 430px;
+  height: 15.5px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.voice .voice-flex .item .prof {
+  margin-top: 20px;
+  display: flex;
+  gap: 35px;
+}
+.voice .voice-flex .item .prof figure {
+  width: 161px;
+}
+.voice .voice-flex .item .prof .name p {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 33px;
+}
+.voice .voice-flex .item .prof .name p span {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+}/*# sourceMappingURL=biginners-guide.css.map */
