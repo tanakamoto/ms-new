@@ -1,9 +1,6 @@
 img{
     max-width: 100%;
 }
-.branch{
-    overflow: unset;
-}
 .mv{
     margin-top: 40px;
     .page-title{
@@ -23,7 +20,7 @@ img{
             border-left: 1px solid black;
             padding-left: 35px;
             @media screen and (max-width:660px) {
-                padding-left: 15px;
+                padding: 4px 0 4px 15px;
             }
             img{
                 @media screen and (max-width:660px) {
@@ -53,6 +50,9 @@ img{
         padding: 0 1rem;
         margin-top: 15px;
         font-size: 12px; 
+        @media screen and (max-width:768px) {
+            display: none;
+        }
     }
 }
 .contents{
@@ -132,9 +132,130 @@ img{
 
 }
 .due{
-    .links{
-        ul{
-            display: flex;
+    margin-bottom: 120px;
+    @media screen and (max-width:768px) {
+        margin-bottom: 70px;
+    }
+    .mv{
+        picture{
+            display: none;
+        }
+        .links{
+            border-top: 1px solid #bfbfbf;
+            border-bottom: 1px solid #bfbfbf;
+            ul{
+                max-width: calc(1000px + 70px);
+                margin: 0 auto;
+                padding: 35px;
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width:768px) {
+                    flex-wrap: wrap;
+                    padding-bottom: 15px;
+                    justify-content: center;
+                }
+                @media screen and (max-width:480px) {
+                    justify-content: space-between;
+                }
+                li{
+                    @media screen and (max-width:768px) {
+                        width:26%;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        &:nth-child(1),
+                        &:nth-child(4),
+                        &:nth-child(7){
+                            text-align: left;
+                        }
+                        &:nth-child(3n){
+                            text-align: right;
+                        }
+                    }
+                    a{
+                        font-size: 14px;
+                        color: #808080;
+                        letter-spacing: 0.1em;
+                        transition: all 0.2s;
+                        &:hover{
+                            color: #d90000;
+                        }
+                    }
+                }
+                .active{
+                    a{
+                        padding-top: 5px;
+                        border-top: 1px solid black;
+                        color: black;
+                        pointer-events: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .pc{
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+            }
+            .sp{
+                @media screen and (min-width:769px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &_contents{
+        .inner{
+            max-width: calc(800px + 30px);
+            padding: 0 15px;
+            margin: 0 auto;
+            .item{
+                margin-top: 100px;
+                @media screen and (max-width:768px) {
+                    margin-top: 50px;
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #bfbfbf;
+                }
+                dl{
+                    margin-top: 30px;
+                    @media screen and (max-width:768px){
+                        margin-top: 25px;
+                    }
+                    dt{
+                        font-size: 20px;
+                    }
+                    dd{
+                        margin-top: 20px;
+                        padding-left: 10px;
+                        font-size: 14px;
+                        letter-spacing: 0.1em;
+                        line-height: 24px;
+                        font-feature-settings: "palt" 1;
+                        @media screen and (max-width:768px){
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+            .button{
+                width: 220px;
+                margin: 100px auto 0;
+                border: 1px solid black;
+                text-align: center;
+                border-radius: 28px;
+                @media screen and (max-width:768px) {
+                    margin-top: 50px;
+                }
+                a{
+                    display: block;
+                    line-height: 56px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
