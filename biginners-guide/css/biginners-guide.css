@@ -185,6 +185,7 @@ img {
   padding-bottom: 20px;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   letter-spacing: 0.1em;
+  font-feature-settings: "palt" 1;
 }
 @media screen and (max-width: 1040px) {
   .philosophy h2 {
@@ -268,7 +269,7 @@ img {
 @media screen and (max-width: 768px) {
   .about__cnt1 .inner h3 {
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     line-height: 30px;
   }
 }
@@ -311,6 +312,7 @@ img {
     text-align: right;
     font-size: 13px;
     max-width: 210px;
+    margin-top: 20px;
   }
 }
 .about__cnt1 .inner .cnt-flex .text .name br {
@@ -333,6 +335,13 @@ img {
   background-position: 120%;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .about__cnt2 {
+    padding: 40px 0;
+    background-size: 105%;
+    background-position: 243% 120%;
+  }
+}
 .about__cnt2 .inner {
   max-width: 1040px;
   margin: 0 auto;
@@ -344,12 +353,31 @@ img {
   font-weight: bold;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+}
 .about__cnt2 .inner .cnt-flex {
   display: flex;
   gap: 35px;
 }
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .cnt-flex {
+    display: block;
+  }
+}
 .about__cnt2 .inner .cnt-flex figure {
   max-width: 224px;
+}
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .cnt-flex figure {
+    width: 152px;
+    float: left;
+    margin: 7px 20px 7px 0;
+  }
 }
 .about__cnt2 .inner .cnt-flex .text {
   max-width: 731px;
@@ -359,10 +387,20 @@ img {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   line-height: 21px;
 }
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .cnt-flex .text p {
+    line-height: 26px;
+  }
+}
 .about__cnt2 .inner .ending {
   margin-top: 20px;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .ending {
+    line-height: 26px;
+  }
 }
 .about__cnt2 .inner .name {
   max-width: 502px;
@@ -373,10 +411,38 @@ img {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .name {
+    max-width: 279px;
+    text-align: right;
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .name span {
+    display: none;
+  }
+}
+.about__cnt2 .inner .name br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .about__cnt2 .inner .name br {
+    display: block;
+  }
+}
 
 .voice {
   background-color: #f1f1f1;
   padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .voice {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .voice .inner {
   max-width: 1000px;
@@ -392,6 +458,11 @@ img {
   font-size: 24px;
   letter-spacing: 0.1em;
 }
+@media screen and (max-width: 768px) {
+  .voice h3 {
+    font-size: 18px;
+  }
+}
 .voice .voice-flex {
   margin-top: 40px;
   display: flex;
@@ -403,10 +474,20 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .voice .voice-flex {
+    margin-top: 30px;
+  }
+}
 .voice .voice-flex .item {
   width: 470px;
   background-color: white;
   padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .voice .voice-flex .item {
+    padding: 20px 10px;
+  }
 }
 .voice .voice-flex .item .thoughts {
   font-size: 18px;
@@ -415,6 +496,14 @@ img {
   position: relative;
   font-feature-settings: "palt" 1;
   line-height: 32px;
+}
+@media screen and (max-width: 768px) {
+  .voice .voice-flex .item .thoughts {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    font-feature-settings: "palt" 0;
+  }
 }
 .voice .voice-flex .item .thoughts::after {
   content: "";
@@ -433,6 +522,11 @@ img {
   gap: 35px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 400px) {
+  .voice .voice-flex .item .prof {
+    gap: 15px;
+  }
+}
 .voice .voice-flex .item .prof figure {
   width: 161px;
 }
@@ -446,6 +540,11 @@ img {
   font-size: 14px;
   font-weight: 400;
 }
+@media screen and (max-width: 390px) {
+  .voice .voice-flex .item .prof .name p span {
+    font-size: 12px;
+  }
+}
 .voice .voice-flex .item ul {
   border-top: 1px solid #e5e5e5;
   padding: 20px 0 0;
@@ -454,9 +553,20 @@ img {
   justify-content: space-between;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .voice .voice-flex .item ul {
+    gap: 20px 0px;
+  }
+}
 .voice .voice-flex .item ul li {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .voice .voice-flex .item ul li {
+    gap: 5px;
+    min-width: 136px;
+  }
 }
 .voice .voice-flex .item ul li p {
   font-size: 14px;
@@ -465,6 +575,29 @@ img {
   width: -moz-fit-content;
   width: fit-content;
   font-feature-settings: "palt" 1;
+  padding-top: 3px;
+}
+@media screen and (max-width: 768px) {
+  .voice .voice-flex .item ul li p span {
+    display: none;
+  }
+}
+.voice .voice-flex .item ul li p br {
+  display: none;
+}
+@media screen and (max-width: 460px) {
+  .voice .voice-flex .item ul li p br {
+    display: block;
+  }
+}
+.voice .voice-flex .item ul li p .pc {
+  display: block;
+}
+@media screen and (max-width: 380px) {
+  .voice .voice-flex .item ul li p {
+    font-size: 13px;
+    padding-top: 5px;
+  }
 }
 .voice .voice-flex .item ul li .gray {
   font-size: 13px;
@@ -474,4 +607,280 @@ img {
   text-align: center;
   background-color: #e5e5e5;
   font-weight: normal;
+  padding: 0;
+}
+@media screen and (max-width: 395px) {
+  .voice .voice-flex .item ul li .gray {
+    width: 75px;
+    font-size: 12px;
+  }
+}
+
+.achievement {
+  background-image: url("../img/jisseki-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 75px;
+  background-position: 30%;
+}
+@media screen and (max-width: 768px) {
+  .achievement {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+}
+.achievement .achievement-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  max-width: 457px;
+  border-top: 1px solid white;
+  font-feature-settings: "palt" 1;
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .achievement .achievement-title {
+    font-size: 18px;
+    max-width: 352px;
+    margin-bottom: 25px;
+  }
+}
+.achievement .inner {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .achievement .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.achievement .inner .items-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .achievement .inner .items-flex {
+    width: 83%;
+  }
+}
+.achievement .inner .items-flex .item {
+  width: 100%;
+  text-align: center;
+}
+.achievement .inner .items-flex .item .rabel {
+  color: #b4272d;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .achievement .inner .items-flex .item .rabel {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.achievement .inner .items-flex .item .num {
+  font-size: 47px;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+@media screen and (max-width: 1040px) and (min-width: 769px) {
+  .achievement .inner .items-flex .item .num {
+    font-size: clamp(38px, 4.2727272727vw, 47px);
+  }
+}
+.achievement .inner .items-flex .item .num span {
+  font-size: 94px;
+  line-height: 78px;
+}
+@media screen and (max-width: 1040px) and (min-width: 769px) {
+  .achievement .inner .items-flex .item .num span {
+    font-size: clamp(70px, 8.5454545455vw, 94px);
+    line-height: clamp(60px, 7.0909090909vw, 78px);
+  }
+}
+
+.activity {
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .activity {
+    margin-top: 40px;
+  }
+}
+.activity h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 5px;
+  border-top: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .activity h3 {
+    font-size: 18px;
+  }
+}
+.activity p {
+  text-align: center;
+  line-height: 19px;
+  font-size: 15px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  .activity p {
+    text-align: left;
+  }
+}
+.activity .activity-flex {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 1040px) {
+  .activity .activity-flex {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .activity .activity-flex {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.activity .activity-flex .item {
+  width: 44.6%;
+  max-width: 446px;
+}
+@media screen and (max-width: 1040px) {
+  .activity .activity-flex .item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .activity .activity-flex .item {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.activity .activity-flex .item .rabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+  gap: 20px;
+}
+.activity .activity-flex .item .rabel p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+}
+.activity .activity-flex .item .rabel .red {
+  background-color: #b4272d;
+  width: 157px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.activity .activity-flex .item .item-flex {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media screen and (max-width: 480px) {
+  .activity .activity-flex .item .item-flex {
+    display: block;
+  }
+}
+.activity .activity-flex .item .item-flex figure {
+  width: 226px;
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .activity .activity-flex .item .item-flex figure {
+    width: 49%;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .activity .activity-flex .item .item-flex figure {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 171px;
+  }
+}
+.activity .activity-flex .item .item-flex p {
+  width: 220px;
+  text-align: left;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  font-feature-settings: "palt" 1;
+  font-size: 14px;
+  padding: 0;
+}
+.activity .activity-flex .item .item-flex p br {
+  line-height: 6px;
+}
+@media screen and (max-width: 768px) {
+  .activity .activity-flex .item .item-flex p {
+    width: 49%;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .activity .activity-flex .item .item-flex p {
+    width: auto;
+    line-height: 21px;
+  }
+}
+
+.btn {
+  margin: 40px auto 120px;
+  width: 300px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+}
+.btn a {
+  display: block;
+  line-height: 56px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #d90000;
+  border: 1px solid #d90000;
+  border-radius: 28px;
+  transition: all 0.3s;
+}
+.btn a:hover {
+  background-color: white;
+  color: #d90000;
 }/*# sourceMappingURL=biginners-guide.css.map */
