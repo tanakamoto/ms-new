@@ -1,17 +1,30 @@
-body .news-1 {
+body .wrap {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 20px;
+}
+body .news-1 {
   height: 128px;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
-  justify-items: space-around;
   gap: 42px;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
 body .news-1:nth-child(1) {
   border-top: 1px solid #e5e5e5;
+}
+@media screen and (max-width: 768px) {
+  body .news-1 {
+    font-size: 12px;
+    height: 135px;
+    line-height: 24px;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+  }
 }
 body .news-1 .date {
   width: 70px;
@@ -20,9 +33,14 @@ body .news-1 .date {
 body .news-1 .label {
   font-feature-settings: "palt" 1;
   width: 135px;
-  line-height: 2.1;
+  line-height: 24px;
   text-align: center;
   background-color: #E5E5E5;
+}
+@media screen and (max-width: 678px) {
+  body .news-1 .label {
+    width: 75px;
+  }
 }
 body .news-1 .title {
   max-width: 700px;
@@ -33,7 +51,9 @@ body .news-1 .title a:hover {
 }
 @media screen and (max-width: 768px) {
   body .news-1 .title {
-    flex-direction: column;
-    justify-content: start;
+    font-size: 12px;
+    height: 40px;
+    line-height: 19px;
+    overflow: hidden;
   }
 }/*# sourceMappingURL=news.css.map */
