@@ -1,0 +1,15 @@
+body .wrap {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body .date {
+  font-size: 15px;
+}
+body .title {
+  font-size: 25px;
+}
+body .text {
+  font-size: 15px;
+  max: width 1000px;
+}/*# sourceMappingURL=news-content.css.map */
