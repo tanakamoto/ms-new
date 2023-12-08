@@ -1,0 +1,116 @@
+body{
+    .wrap{
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h3{
+           font-size: 16px;
+           color: #808080; 
+        }
+        .voice-1{
+            width: 485px;
+            margin: 5px 15px 75px 0;
+            padding: 28px 31px 25px 24px;
+            height: 275px;
+            border: 1px solid #BFBFBF;
+            background-color: #e9e9e4;
+
+            .title{
+                max-width: 425px;
+                line-height: 31px;
+                font-size: 18px;
+                margin: 0;
+                } 
+            .photo{
+                width: 137px;
+                height: 145px;
+            } 
+            .information{
+                display: flex;
+                flex-wrap: wrap;
+                .company{
+                    margin: 55px 0 0 27px;
+                    font-size: 14px;
+                }
+                .name{
+                    width: 256px ;
+                    font-size: 18px;
+                    margin: 10px 0 7px 27px;
+                    padding-bottom: 25px;
+                    border-bottom: 1px solid #808080;
+                    .span{
+                    font-size: 14px;
+                    color: #808080;
+                    }
+                }
+                .view{
+                    width: 256px ;
+                    text-align: left;
+                    // margin: 7px 30px 25px 180px;
+                    font-size: 14px;
+                    color: #808080;
+                }
+            }
+        }
+        .voice-2{
+            width: 485px;
+            margin: 5px 0 75px 15px;
+            padding: 28px 28px 25px 31px;
+            height: 275px;
+            border: 1px solid #BFBFBF;
+            background-color: #f1f1f1;
+
+            .title{
+                max-width: 425px;
+                line-height: 31px;
+                font-size: 18px;
+                margin: 0;
+                } 
+            .photo{
+                width: 137px;
+                height: 145px;
+            } 
+
+            .information{
+                display: flex;
+                flex-wrap: wrap;
+                .company{
+                    margin: 55px 0 0 27px;
+                    font-size: 14px;
+                }
+                .name{
+                    width: 256px ;
+                    font-size: 18px;
+                    margin: 10px 0 7px 27px;
+                    padding-bottom: 25px;
+                    border-bottom: 1px solid #808080;
+                    .span{
+                        font-size: 14px;
+                        color: #808080;
+                    }
+                }
+                .view{
+                    font-size: 14px;
+                    color: #808080;
+                }
+            }
+        }   
+}
+
+    
+    
+      
+    
+
+
+
+
+
+
+
+
+
