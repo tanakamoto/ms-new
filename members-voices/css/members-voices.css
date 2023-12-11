@@ -4,93 +4,114 @@ body .wrap {
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 body h3 {
   font-size: 16px;
   color: #808080;
 }
+@media screen and (max-width: 678px) {
+  body h3 {
+    font-size: 12px;
+  }
+}
+body .voice h3 .voice-1 {
+  margin-left: 10px;
+}
+body .voice h3 .voice-2 {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 body .voice-1 {
-  width: 485px;
+  max-width: 485px;
   margin: 5px 15px 75px 0;
   padding: 28px 31px 25px 24px;
   height: 275px;
-  border: 1px solid #BFBFBF;
-  background-color: #e9e9e4;
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
 }
-body .voice-1 .title {
-  max-width: 425px;
-  line-height: 31px;
-  font-size: 18px;
-  margin: 0;
-}
-body .voice-1 .photo {
-  width: 137px;
-  height: 145px;
-}
-body .voice-1 .information {
-  display: flex;
-  flex-wrap: wrap;
-}
-body .voice-1 .information .company {
-  margin: 55px 0 0 27px;
-  font-size: 14px;
-}
-body .voice-1 .information .name {
-  width: 256px;
-  font-size: 18px;
-  margin: 10px 0 7px 27px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #808080;
-}
-body .voice-1 .information .name .span {
-  font-size: 14px;
-  color: #808080;
-}
-body .voice-1 .information .view {
-  width: 256px;
-  text-align: left;
-  font-size: 14px;
-  color: #808080;
+body .voice-1 a:hover {
+  background-color: #ffffff;
 }
 body .voice-2 {
-  width: 485px;
+  max-width: 485px;
   margin: 5px 0 75px 15px;
   padding: 28px 28px 25px 31px;
   height: 275px;
-  border: 1px solid #BFBFBF;
+  border: 1px solid #f1f1f1;
   background-color: #f1f1f1;
 }
-body .voice-2 .title {
+body .voice-2 a:hover {
+  background-color: #ffffff;
+}
+
+.title {
   max-width: 425px;
   line-height: 31px;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
+  font-weight: bold;
 }
-body .voice-2 .photo {
+@media screen and (max-width: 678px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+.photo {
   width: 137px;
   height: 145px;
 }
-body .voice-2 .information {
+
+.information {
   display: flex;
   flex-wrap: wrap;
 }
-body .voice-2 .information .company {
+.information .company {
   margin: 55px 0 0 27px;
   font-size: 14px;
 }
-body .voice-2 .information .name {
+@media screen and (max-width: 678px) {
+  .information .company {
+    font-size: 12px;
+  }
+}
+.information .name {
   width: 256px;
   font-size: 18px;
   margin: 10px 0 7px 27px;
   padding-bottom: 25px;
   border-bottom: 1px solid #808080;
 }
-body .voice-2 .information .name .span {
+@media screen and (max-width: 678px) {
+  .information .name {
+    font-size: 14px;
+  }
+}
+.information .name span {
   font-size: 14px;
   color: #808080;
 }
-body .voice-2 .information .view {
-  font-size: 14px;
+@media screen and (max-width: 678px) {
+  .information .name span {
+    font-size: 12px;
+  }
+}
+.information p {
+  font-weight: bold;
+}
+
+.infor {
+  max-width: 283px;
+}
+
+.view p {
+  max-width: 65px;
+  margin: 0 10px 0 210px;
+  font-size: 12px;
   color: #808080;
+}
+@media screen and (max-width: 678px) {
+  .view p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=members-voices.css.map */
