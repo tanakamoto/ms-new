@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.89 52.62">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: YuGo-Medium, 'YuGo Medium-83pv-RKSJ-H';
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: .1em;
+      }
+
+      .cls-2 {
+        font-family: TrajanPro-Regular, 'Trajan Pro';
+        font-size: 28px;
+        letter-spacing: .05em;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <g>
+      <text class="cls-1" transform="translate(0 47.87)"><tspan x="0" y="0">滋賀支部</tspan></text>
+      <text class="cls-2" transform="translate(0 24.5)"><tspan x="0" y="0">SHIGA</tspan></text>
+    </g>
+  </g>
+</svg>
