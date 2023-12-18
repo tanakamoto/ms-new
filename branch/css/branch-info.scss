@@ -55,7 +55,7 @@ img{
         }
     }
 }
-.contents{
+.branch__contents{
     margin-top: 100px;
     @media screen and (max-width:660px) {
         margin-top: 50px;
@@ -258,4 +258,7 @@ img{
             }
         }
     }
+}
+.red{
+    fill: #d90000;
 }

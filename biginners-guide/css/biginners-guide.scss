@@ -4,6 +4,9 @@
 @mixin yugothic{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
+@mixin cinzel{
+    font-family: 'Cinzel', serif;
+}
 img{
     max-width: 100%;
 }
@@ -570,7 +573,9 @@ img{
         padding: 0 20px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:50px;
         @media screen and (max-width:768px) {
             flex-direction: column;
             justify-content: center;
@@ -610,6 +615,7 @@ img{
                         font-size: clamp(38px,calc(100vw*47/1100),47px);
                     }
                     span{
+                        @include cinzel();
                         font-size: 94px;
                         line-height: 78px;
                         @media screen and (max-width:1040px) and (min-width:769px) {

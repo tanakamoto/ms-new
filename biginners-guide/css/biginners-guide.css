@@ -654,7 +654,9 @@ img {
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 @media screen and (max-width: 768px) {
   .achievement .inner {
@@ -706,6 +708,7 @@ img {
   }
 }
 .achievement .inner .items-flex .item .num span {
+  font-family: "Cinzel", serif;
   font-size: 94px;
   line-height: 78px;
 }
