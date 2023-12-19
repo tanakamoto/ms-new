@@ -65,6 +65,10 @@ body .information .branch .shiga {
 body .information .branch .kyusyu {
   margin: 12px 0 10px 0;
 }
+body .information .branch .shizuoka {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
 body .information .branch .supporter {
   margin: 13px 0 10px 0;
 }
@@ -75,10 +79,10 @@ body .information .branch .place {
 }
 body .information .branch .photo-2 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
   z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 body .information .branch .detail {
   font-size: 12px;
@@ -91,4 +95,7 @@ body a:hover .place {
 }
 body a:hover .branch {
   border-left: 10px solid #D90000;
+}
+body a:hover .branch .red {
+  fill: #D90000;
 }/*# sourceMappingURL=overview_member.css.map */
