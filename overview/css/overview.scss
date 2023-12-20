@@ -1,0 +1,62 @@
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+  h1{
+    max-width: 1000px;
+    padding-bottom: 16px;
+    border-bottom: 1px #a6a6a6 solid;
+    font-weight: bold;
+    font-size: 24px;
+    }
+    .theme{
+        max-width: 1000px;
+        height: 185px;
+        border: 0.5px #a6a6a6 solid;
+        border-left: 10px #000 solid;
+        display: flex;
+
+        .meeting{
+            max-width: 500px;
+            margin: 0 auto;
+            // margin: 15px auto 0px 15px;
+            // margin: 15px auto 10px 15px ;
+            height: 184px;
+            position: relative;
+            img{
+                width: 151px;
+                height: 22px;
+                margin: 15px 0;
+                } 
+            .kinds{
+                font-size: 12px;
+                padding: 0 385px 88px 0;
+                border-bottom: 1px #a6a6a6 solid;
+                // border-bottom: 300px;
+                }
+            .border{
+                color: #a6a6a6;
+                border: left 300px; ;
+            }
+                
+            .detail{
+                font-size: 12px;
+                position: absolute;
+                bottom: 8px;
+                right: 10px;
+                // padding-top: 7px 25px 12px 223px;
+                // border-top: 1px #808080 solid;
+                color: #808080;
+
+            }  
+        }
+        .meeting_setumei img{
+            width: 500px;
+            height: 184px;
+        }
+
+        
+    }
+        
+}
+
+
