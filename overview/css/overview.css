@@ -1,0 +1,49 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body h1 {
+  max-width: 1000px;
+  padding-bottom: 16px;
+  border-bottom: 1px #a6a6a6 solid;
+  font-weight: bold;
+  font-size: 24px;
+}
+body .theme {
+  max-width: 1000px;
+  height: 185px;
+  border: 0.5px #a6a6a6 solid;
+  border-left: 10px #000 solid;
+  display: flex;
+}
+body .theme .meeting {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 184px;
+  position: relative;
+}
+body .theme .meeting img {
+  width: 151px;
+  height: 22px;
+  margin: 15px 0;
+}
+body .theme .meeting .kinds {
+  font-size: 12px;
+  padding: 0 385px 88px 0;
+  border-bottom: 1px #a6a6a6 solid;
+}
+body .theme .meeting .border {
+  color: #a6a6a6;
+  border: left 300px;
+}
+body .theme .meeting .detail {
+  font-size: 12px;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  color: #808080;
+}
+body .theme .meeting_setumei img {
+  width: 500px;
+  height: 184px;
+}/*# sourceMappingURL=overview.css.map */
