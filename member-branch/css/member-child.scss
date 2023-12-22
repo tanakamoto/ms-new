@@ -1,0 +1,71 @@
+.member-child{
+    .branch-name{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-bottom: 55px;
+        h3{
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 15px;
+            border-top: 1px solid black;
+            width: fit-content;
+        }
+    }
+    .wrap{
+        max-width: 755px;
+        margin: 0 auto;
+        padding: 0 20px;
+        table{
+            width: 100%;
+            tr{
+                display: flex;
+                th{
+                    width: 40%;
+                    max-width: 120px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    background-color: #f1f1f1;
+                    border: 1px solid white;
+                    text-align: center;
+                    height: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and (max-width:768px) {
+                        writing-mode: vertical-rl;
+                        max-width: 60px;
+                        height: 142px;
+                    }
+                }
+                td{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #f1f1f1;
+                    margin-left: 45px;
+                    max-width: 560px;
+                    width: 100%;
+                    @media screen and (max-width:768px) {
+                        margin-left: 15px;
+                    }
+                    div{
+                        width: 100%;
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        line-height: 21px;
+                        .company{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    td{
+                        border-top: 1px solid #f1f1f1;
+                    }
+                }
+            }
+        }
+    }
+}
