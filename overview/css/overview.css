@@ -1,100 +1,204 @@
-body {
+body .wrap-2 {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 30px;
 }
-body .wrap {
-  max-width: 1000px;
-}
-@media screen and (max-width: 768px) {
-  body .wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 400px) {
-  body .wrap {
-    align-items: center;
-  }
-}
-body .wrap .agenda h1 {
-  max-width: 1000px;
+body .wrap-2 .agenda h1 {
+  max-width: 1060px;
   padding-bottom: 16px;
   border-bottom: 1px solid #a6a6a6;
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 30px auto 170px;
 }
-body .wrap .theme {
+body .wrap-2 .theme {
   max-width: 1000px;
-  height: 185px;
   border: 1px #a6a6a6 solid;
   border-left: 10px #000 solid;
   display: flex;
-  margin: 30px auto 0px;
+  justify-content: center;
+  margin: 30px auto 170px;
 }
 @media screen and (max-width: 768px) {
-  body .wrap .theme {
+  body .wrap-2 .theme {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 @media screen and (max-width: 400px) {
-  body .wrap .theme {
+  body .wrap-2 .theme {
     align-items: center;
     flex-direction: column-reverse;
   }
 }
-body .wrap .theme .meeting {
-  max-width: 490px;
-  width: 49%;
+body .wrap-2 .theme .meeting_left {
+  width: 50%;
+  padding: 15px 0 10px 18px;
 }
 @media screen and (max-width: 768px) {
-  body .wrap .theme .meeting {
+  body .wrap-2 .theme .meeting_left {
     width: 100%;
     max-width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
-  body .wrap .theme .meeting {
-    max-width: 400px;
-    width: 49%;
-  }
-}
-body .wrap .theme .meeting .meeting-1 img {
+body .wrap-2 .theme .meeting_left .meeting-1 {
   width: 151px;
-  height: 22px;
-  margin: 15px 325px 10px 15px;
+  margin-bottom: 10px;
 }
-body .wrap .theme .meeting .meeting-4 {
-  display: flex;
-}
-body .wrap .theme .meeting .meeting-4 .meeting-2 p {
+body .wrap-2 .theme .meeting_left .left_flex .meeting-2 p {
   font-size: 12px;
   width: 75px;
-  margin: 0 80px 123px 15px;
 }
-body .wrap .theme .meeting .meeting-3 {
+body .wrap-2 .theme .meeting_left .left_flex .meeting-3 {
+  width: 228px;
+  text-align: right;
+  padding-top: 7px;
   font-size: 12px;
   color: #808080;
-  padding: 7px 0 13px 235px;
-  margin: 100px 0px 0 0;
+  margin: 19% 19px 0 auto;
+  align-self: flex-end;
   border-top: 1px solid #808080;
 }
-body .wrap .meeting_setumei img {
-  width: 500px;
+@media screen and (max-width: 1000px) {
+  body .wrap-2 .theme .meeting_left .left_flex .meeting-3 {
+    margin-top: 17%;
+  }
+}
+@media screen and (max-width: 900px) {
+  body .wrap-2 .theme .meeting_left .left_flex .meeting-3 {
+    margin-top: 10%;
+  }
 }
 @media screen and (max-width: 768px) {
-  body .wrap .meeting_setumei img {
-    max-width: 500px;
-    border-left: 10px #000 solid;
+  body .wrap-2 .theme .meeting_left .left_flex .meeting-3 {
+    margin-top: 32px;
   }
 }
-@media screen and (max-width: 400px) {
-  body .wrap .meeting_setumei img {
-    width: 340px;
-    border-left: 10px #000 solid;
+body .wrap-2 .meeting_setumei {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  body .wrap-2 .meeting_setumei {
+    width: 100%;
   }
+}
+body .wrap-2 .meeting_setumei img {
+  width: 100%;
+  height: 100%;
+}
+body a:hover .meeting-2 {
+  color: #D90000;
+}
+body a:hover .theme {
+  border-left: 10px solid #D90000;
+}
+body a:hover .theme .red {
+  fill: #D90000;
 }
 body a:hover .meeting_setumei {
   opacity: 0.5;
+}
+body .wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+body .information {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px 20px;
+}
+@media screen and (max-width: 1059px) {
+  body .information {
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .information {
+    align-items: center;
+  }
+}
+body .information a {
+  max-width: 340px;
+  width: 33%;
+}
+@media screen and (max-width: 1059px) {
+  body .information a {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 730px) {
+  body .information a {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+body .information .branch {
+  height: 130px;
+  border: 1px solid #A6A6A6;
+  border-left: 10px solid #000000;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 10px 10px 10px;
+}
+body .information .branch .osaka {
+  margin: 10px 0 5px 0;
+}
+body .information .branch .nagoya {
+  margin: 12px 0 10px 0;
+}
+body .information .branch .nagano {
+  margin: 12px 0 10px 0;
+}
+body .information .branch .sikoku {
+  margin: 15px 0 10px 0;
+}
+body .information .branch .hirosima {
+  margin: 12px 0 10px 0;
+}
+body .information .branch .shiga {
+  margin: 12px 0 10px 0;
+}
+body .information .branch .kyusyu {
+  margin: 12px 0 10px 0;
+}
+body .information .branch .shizuoka {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+body .information .branch .supporter {
+  margin: 13px 0 10px 0;
+}
+body .information .branch .place {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #A6A6A6;
+  font-size: 12px;
+}
+body .information .branch .photo-2 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .information .branch .detail {
+  font-size: 12px;
+  text-align: right;
+  color: #808080;
+  margin-top: 7px;
+}
+body a:hover .place {
+  color: #D90000;
+}
+body a:hover .branch {
+  border-left: 10px solid #D90000;
+}
+body a:hover .branch .red {
+  fill: #D90000;
 }/*# sourceMappingURL=overview.css.map */
