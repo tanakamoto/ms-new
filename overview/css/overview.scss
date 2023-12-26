@@ -6,7 +6,7 @@ body {
         .agenda
             h1 {
                 max-width: 1060px;
-                padding-bottom: 16px;
+                padding-bottom: 13px;
                 border-bottom: 1px solid #a6a6a6;
                 font-weight: bold;
                 font-size: 24px;
@@ -18,7 +18,7 @@ body {
             border-left: 10px #000 solid;
             display: flex;
             justify-content: center;
-            margin: 30px auto 170px;
+            margin: 30px auto 100px;
             @media screen and (max-width:768px) {
                 display: flex;
                 flex-direction: column-reverse;
@@ -99,8 +99,13 @@ body {
                 opacity: 0.5;
             }
         }
+        .agenda-2{
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 13px;
+        }
         .wrap {
-            max-width: 1120px;
+            max-width: 1060px;
             margin: 0 auto;
             padding: 0 30px;
             }
@@ -109,6 +114,9 @@ body {
             flex-wrap: wrap;
             align-items: center;
             gap: 40px 20px;
+            padding-top: 30px;
+            border-top: 1px solid #a6a6a6;
+            // margin-top: 30px;
             @media screen and (max-width:1059px){
             justify-content: space-between;
             max-width: 700px;   
@@ -118,7 +126,7 @@ body {
                 align-items: center;
             }  
             a{ 
-                max-width: 340px;
+                max-width: 320px;
                 width: 33%;
                 @media screen and (max-width:1059px) {
                  width:48%;   

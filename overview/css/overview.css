@@ -5,7 +5,7 @@ body .wrap-2 {
 }
 body .wrap-2 .agenda h1 {
   max-width: 1060px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
   border-bottom: 1px solid #a6a6a6;
   font-weight: bold;
   font-size: 24px;
@@ -17,7 +17,7 @@ body .wrap-2 .theme {
   border-left: 10px #000 solid;
   display: flex;
   justify-content: center;
-  margin: 30px auto 170px;
+  margin: 30px auto 100px;
 }
 @media screen and (max-width: 768px) {
   body .wrap-2 .theme {
@@ -101,8 +101,13 @@ body a:hover .theme .red {
 body a:hover .meeting_setumei {
   opacity: 0.5;
 }
+body .agenda-2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 13px;
+}
 body .wrap {
-  max-width: 1120px;
+  max-width: 1060px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -111,6 +116,8 @@ body .information {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px 20px;
+  padding-top: 30px;
+  border-top: 1px solid #a6a6a6;
 }
 @media screen and (max-width: 1059px) {
   body .information {
@@ -125,7 +132,7 @@ body .information {
   }
 }
 body .information a {
-  max-width: 340px;
+  max-width: 320px;
   width: 33%;
 }
 @media screen and (max-width: 1059px) {
