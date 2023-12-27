@@ -6,38 +6,54 @@ body .wrap {
 body .wrap p.name {
   width: 250px;
   text-align: left;
-  padding-left: 7%;
+  padding-left: 5%;
 }
 body .wrap p.date {
   width: 370px;
-  text-align: left;
+  padding-right: 30px;
 }
 body .wrap p.join {
-  width: 180px;
+  width: 205px;
   text-align: left;
+  padding-right: 10px;
 }
-body .wrap .plan {
+body .wrap .heading {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 13px;
   border-bottom: 2px solid #808080;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
+}
+body .wrap .heading .heading-1 {
+  padding-left: 8%;
+}
+body .wrap .heading .heading-2 {
+  padding: 0 5% 0;
+}
+body .wrap .heading .heading-3 {
+  padding-right: 15%;
 }
 body .wrap .plan-1 {
   display: flex;
   line-height: 73px;
   border-bottom: 1px solid #e5e5e5;
-  font-size: 14px;
+  font-size: 12px;
 }
 body .wrap .plan-2 {
   display: flex;
   line-height: 73px;
   border-bottom: 1px solid #e5e5e5;
-  font-size: 14px;
+  font-size: 12px;
 }
 body .wrap .plan-3 {
   display: flex;
   margin-top: 28px;
-  font-size: 14px;
+  font-size: 12px;
+}
+body .wrap .plan-3 .date {
+  line-height: 1.8em;
+}
+body .wrap .plan-3 .join {
+  line-height: 1.8em;
 }/*# sourceMappingURL=overview_activity05_3_1.css.map */
