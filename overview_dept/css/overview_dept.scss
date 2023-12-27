@@ -1,0 +1,71 @@
+body{
+    .wrap{
+        max-width: 1460px; 
+        margin: 0 auto;
+        padding: 0 20%;
+        text-align: center;
+         .sub{
+             margin: 0 25%;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             text-align: center;
+             font-weight: bold;
+             @media screen and (max-width:740px) {
+             margin: 0 5%;
+             @media screen and (max-width:450) {
+             margin: 0;    
+             }
+         }
+                 .sub-1 {
+                     width: 220px;
+                     height: 130px;
+                     border: 1px solid #808080;
+                     border-radius: 10px;
+                     margin-bottom: 30px;
+                     padding: 40px ;
+                     line-height: 2em;
+                     letter-spacing: 0.12em;
+                 }  
+                 .sub-2 {
+                     width: 220px;
+                     height: 130px;
+                     border: 1px solid #808080;
+                     border-radius: 10px;
+                     margin-bottom: 30px;
+                     padding: 40px ;
+                     line-height: 2em;
+                     letter-spacing: 0.12em;
+                 }  
+                 .sub-3 {
+                     width: 220px;
+                     height: 130px;
+                     border: 1px solid #808080;
+                     border-radius: 10px;
+                     margin-bottom: 30px;
+                     padding: 40px;
+                     line-height: 2em;
+                     letter-spacing: 0.12em;
+                 }  
+                 .sub-4 {
+                     width: 220px;
+                     height: 130px;
+                     border: 1px solid #808080;
+                     border-radius: 10px;
+                     margin-bottom: 30px;
+                     padding: 40px ;
+                     line-height: 2em;
+                     letter-spacing: 0.12em;
+                 }  
+                 .sub-5 {
+                     width: 220px;
+                     height: 130px;
+                     border: 1px solid #808080;
+                     border-radius: 10px;
+                     padding: 40px;
+                     line-height: 2em;
+                     letter-spacing: 0.12em;
+                 }  
+         }
+     }       
+ }
